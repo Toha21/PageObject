@@ -12,7 +12,6 @@ public class DashboardPage {
     private SelenideElement heading = $("[data-test-id=dashboard]");
     private SelenideElement firstCardButton = $x("//span[@class=\"button__text\"][1]");
     private SelenideElement secondCardButton = $x("//*[@id=\"root\"]/div/ul/li[2]/div/button/span/span");
-    // private SelenideElement secondCardButton = $x ("//span[@class=\"button__text\"][2]");  не понимаю, почему не работает
     private ElementsCollection cards = $$(".list__item div");
     private final String balanceStart = "баланс: ";
     private final String balanceFinish = " р.";

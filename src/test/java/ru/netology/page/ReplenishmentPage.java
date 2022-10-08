@@ -7,12 +7,17 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ReplenishmentPage {
+
+
     private SelenideElement heading = $("[data-test-id=dashboard]");
 
     private SelenideElement amountField = $("[data-test-id=\"amount\"] .input__control");
     private SelenideElement whereFrom = $("[data-test-id=\"from\"] input");
     private SelenideElement button = $("[data-test-id=\"action-transfer\"] .button__text");
-    private SelenideElement errorNotification = $("[data-test-id=\"error-notification\"] .notification__content");
+
+
+
+    public SelenideElement errorNotification = $("[data-test-id=\"error-notification\"] .notification__content");
 
 
     public ReplenishmentPage() {
@@ -27,4 +32,5 @@ public class ReplenishmentPage {
         button.click();
         return new DashboardPage();
     }
+
 }
